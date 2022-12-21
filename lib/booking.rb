@@ -10,9 +10,9 @@ class Booking
     end
 
     def time_conversion
-        @hours = (@time / 60)
-        @days = (@time / 1440) 
-        @weeks = (@time / 10080)
+        @hours = (@time.to_f / 60).round
+        @days = (@time.to_f / 1440).round
+        @weeks = (@time.to_f / 10080).round
     end
 
 end

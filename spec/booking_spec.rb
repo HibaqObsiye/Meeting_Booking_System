@@ -40,4 +40,31 @@ describe Booking do
         end
     end
 
+    context "Converting minutes to weeks" do
+        it "rounds number to nearest whole value if value is a decimal" do
+            booking = Booking.new(15120)
+            booking.time_conversion
+            
+            expect(booking.weeks).to eq(2)
+        end
+    end
+
+    context "Converting minutes to hours" do
+        it "rounds number to nearest whole value if value is a decimal" do
+            booking = Booking.new(150)
+            booking.time_conversion
+            
+            expect(booking.hours).to eq(3)
+        end
+    end
+
+    context "Converting minutes to days" do
+        it "rounds number to nearest whole value if value is a decimal" do
+            booking = Booking.new(6480)
+            booking.time_conversion
+            
+            expect(booking.days).to eq(5)
+        end
+    end
+
 end
