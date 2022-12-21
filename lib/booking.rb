@@ -26,6 +26,22 @@ class Booking
             hour_cost_total = @hour_price * @hours
         end
     end
-    
 
+    def price_per_day
+        if @days <= 0
+            @day_price
+        else
+            day_cost_total = @days * @day_price
+        end
+    end
+
+    def price_per_week 
+        if @weeks <= 0
+            @week_price
+        else
+            week_cost_total = @weeks * @week_price  
+        end
+    end
+
+   
 end
