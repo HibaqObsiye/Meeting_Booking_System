@@ -7,8 +7,8 @@
           null,
           1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           null
@@ -16,10 +16,13 @@
       },
       "/Users/hibaqobsiye/Meeting_booking_system/lib/booking.rb": {
         "lines": [
-
+          1,
+          null,
+          null,
+          null
         ]
       }
     },
-    "timestamp": 1671641645
+    "timestamp": 1671641818
   }
 }
