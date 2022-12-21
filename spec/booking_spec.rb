@@ -31,4 +31,13 @@ describe Booking do
         end
     end
 
+    context "Given the booking time in minutes" do
+        it "converts it to weeks" do
+            booking = Booking.new(10080)
+            booking.time_conversion
+
+            expect(booking.weeks).to eq(1)
+        end
+    end
+
 end

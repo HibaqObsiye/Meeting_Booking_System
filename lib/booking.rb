@@ -11,7 +11,8 @@ class Booking
 
     def time_conversion
         @hours = (@time / 60)
-        @days = (@time / 1440 ) 
+        @days = (@time / 1440) 
+        @weeks = (@time / 10080)
     end
 
 end
