@@ -15,4 +15,10 @@ class Booking
         @weeks = (@time.to_f / 10080).round
     end
 
+    def price_per_minute
+        @min_cost_total = @time * 2
+    end
+
+    
+
 end

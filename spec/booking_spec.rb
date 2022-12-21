@@ -67,4 +67,28 @@ describe Booking do
         end
     end
 
+    
+    it "calculates the cost of booking a room per minute and returns price as an integer " do
+        booking = Booking.new(60)
+                
+        expect(booking.price_per_minute).to eq(120)
+    end
+
+    it "calculates the cost of booking a room in hours and returns the price as an integer" do
+        booking = Booking.new(6)
+        booking.time_conversion
+        expect(booking.price_per_day).to eq(132)
+    end
+
+    xit "calculates the cost of booking a room in days and returns the price as an integer" do
+
+    end
+
+    xit "calculates the cost of booking a room in weeks and returns the price as an integer" do
+
+    end
+    
+
+
+ 
 end
