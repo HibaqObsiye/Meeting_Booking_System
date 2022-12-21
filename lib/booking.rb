@@ -9,6 +9,8 @@ class Booking
         @week_price = 105
     end
 
-  
+    def time_conversion
+        @hours = (@time / 60) 
+    end
 
 end
