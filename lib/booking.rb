@@ -1,6 +1,6 @@
 class Booking
     attr_accessor :time, :hours, :days, :weeks
-
+    
     def initialize 
         @minute_price = 2
         @hour_price = 22

@@ -48,7 +48,23 @@ describe Booking do
             end
         end
 
-        
+        context 'When 3 hours are given' do
+            it 'returns  day price as the cheaper option than hour price' do
+                expect(subject.get_price(180)).to eq(60)
+            end
+        end
+
+        context 'When 2 days are given' do
+            it 'returns  week price as the cheaper option than day price' do
+                expect(subject.get_price(2880)).to eq(105)
+            end
+        end
+
+        context 'When 2 weeks are given' do
+            it 'returns week price as the cheaper option' do
+                expect(subject.get_price(20160)).to eq(210)
+            end
+        end
 
     end
 
