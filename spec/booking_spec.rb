@@ -75,9 +75,9 @@ describe Booking do
     end
 
     it "calculates the cost of booking a room in hours and returns the price as an integer" do
-        booking = Booking.new(6)
+        booking = Booking.new(360)
         booking.time_conversion
-        expect(booking.price_per_day).to eq(132)
+        expect(booking.price_per_hour).to eq(132)
     end
 
     xit "calculates the cost of booking a room in days and returns the price as an integer" do

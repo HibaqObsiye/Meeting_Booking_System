@@ -19,6 +19,13 @@ class Booking
         @min_cost_total = @time * 2
     end
 
+    def price_per_hour
+        if @hours <= 0
+            @hour_price
+        else
+            hour_cost_total = @hour_price * @hours
+        end
+    end
     
 
 end
