@@ -20,7 +20,7 @@ class Booking
     end
 
     def price_per_hour
-        if @hours <= 0
+        if @hours == 0
             @hour_price
         else
             hour_cost_total = @hour_price * @hours
@@ -28,7 +28,7 @@ class Booking
     end
 
     def price_per_day
-        if @days <= 0
+        if @days == 0
             @day_price
         else
             day_cost_total = @days * @day_price
@@ -36,7 +36,7 @@ class Booking
     end
 
     def price_per_week 
-        if @weeks <= 0
+        if @weeks == 0
             @week_price
         else
             week_cost_total = @weeks * @week_price  

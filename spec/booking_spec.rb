@@ -115,4 +115,25 @@ describe Booking do
             expect(booking.best_price).to eq(210)
         end
     end 
+
+    it "returns the default hour price if hour time is equal to 0" do
+        booking = Booking.new(10)
+        booking.time_conversion
+
+        expect(booking.price_per_hour).to eq(22)
+    end
+
+    it "returns the default day price if day time is equal to 0" do
+        booking = Booking.new(5)
+        booking.time_conversion
+
+        expect(booking.price_per_day).to eq(60)
+    end
+
+    it "returns the default week price if week time is equal to 0" do
+        booking = Booking.new(3)
+        booking.time_conversion
+
+        expect(booking.price_per_week).to eq(105)
+    end
 end
