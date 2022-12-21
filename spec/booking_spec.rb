@@ -93,6 +93,26 @@ describe Booking do
         expect(booking.price_per_week).to eq(945)
     end
     
-   
- 
+    context "Having calcuated time price per min,hour,day, and week" do
+        it "returns the best price for booking a room for 1440 minutes" do
+            booking = Booking.new(1440)
+            booking.time_conversion
+
+            expect(booking.best_price).to eq(60)
+        end
+
+        it "returns the best price for booking a room for 2880 minutes" do
+            booking = Booking.new(2880)
+            booking.time_conversion
+
+            expect(booking.best_price).to eq(105)
+        end
+
+        it "returns the best price for booking a room for 20160 minutes" do
+            booking = Booking.new(20160)
+            booking.time_conversion
+
+            expect(booking.best_price).to eq(210)
+        end
+    end 
 end
