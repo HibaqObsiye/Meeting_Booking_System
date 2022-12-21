@@ -1,7 +1,25 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/hibaqobsiye/Meeting_booking_system/spec/booking_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/hibaqobsiye/Meeting_booking_system/lib/booking.rb": {
+        "lines": [
+
+        ]
+      }
     },
-    "timestamp": 1671640379
+    "timestamp": 1671641645
   }
 }
