@@ -9,4 +9,6 @@ class Booking
         @week_price = 105
     end
 
+  
+
 end
