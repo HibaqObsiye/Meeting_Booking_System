@@ -50,7 +50,7 @@ describe Booking do
 
         context 'When 3 hours are given' do
             it 'returns  day price as the cheaper option than hour price' do
-                p subject.get_price(180)
+                subject.get_price(180)
                 expect(subject.get_price(180)).to eq(60)
             end
         end
