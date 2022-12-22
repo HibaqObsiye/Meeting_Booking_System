@@ -17,9 +17,9 @@ class Booking
     private
 
     def convert_time
-        @hours = (@minutes.to_f / 60).ceil
-        @days = (@minutes.to_f / 1440).ceil
-        @weeks = (@minutes.to_f / 10080).ceil
+      @hours = (@minutes.to_f / 60).ceil
+      @days = (@minutes.to_f / 1440).ceil
+      @weeks = (@minutes.to_f / 10080).ceil
     end
 
     def price_per_minute
