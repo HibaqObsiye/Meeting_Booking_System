@@ -1,6 +1,6 @@
 # Booking Meeting System
 
-### Project description
+## Project description
 The purpose of this project is to build a booking class that's intended funtionality is to calculate the price of a meeting room based upon the given meeting duration and following [min|hour|day|week] tariff:
 
 Price per minute: £2<br>
@@ -8,7 +8,7 @@ Price per hour: £22<br>
 Price per day: £60<br>
 Price per week: £105<br>
 
-### Project setup and installation
+## Project setup and installation
 
 1)Start by cloning this repo:
 ```
@@ -48,7 +48,7 @@ This project uses rspec to run tests. Run the command below in the project direc
 ```
 rspec
 ```
-### Demo screenshot
+## Demo screenshot
 ![alt text](images/demo.jpeg)
 
 ### My process and challenges
@@ -62,12 +62,12 @@ Remaining tasks
 
 I would like to implement a fail option if user inputs information in an incorrect format such as a string. Also, I would like a fail option if user inputed a value that is equal to or less than zero. I would like to implement a meeting class and implement it in my booking class in case user wants to specify which meeting room and have a price value per meeting room.
 
-### Design
-
-    ![alt text](images/diagram.jpeg)
+## Design
+### UML diagram to show class with its attributes and methods
+  ![alt text](images/diagram.jpeg)
 
 ## Testing
-    Installed Simplecov for test coverage. It's currently 100%.
+Installed Simplecov for test coverage. It's currently 100%.
     
 ## Edge cases
 - If time converted into either hour,day or week is not a whole number e.g 1.5 weeks.
