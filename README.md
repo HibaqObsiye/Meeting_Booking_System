@@ -19,9 +19,39 @@ https://github.com/HibaqObsiye/Meeting_Booking_System
 rvm get stable
 rvm use ruby --latest --install --default
 ```
-3)run the command bellow(if you don't have bundler already)
+3)run the commands below(if you don't have bundler already)
 ```
 gem install bundler
 bundle
 ```
-4)
+## To run the project in irb
+
+1) When in the project directory, run irb in your terminal
+```
+irb
+```
+2) Require the Booking class
+```
+require './lib/booking.rb'
+```
+3) Set up the instance for Booking class
+```
+booking = Booking.new
+```
+4) You are now able to get_price(minutes) based upon the given meeting duration and following [min|hour|day|week] tariff.
+```
+booking = Booking.new
+booking.get_price(60)
+```
+### Demo screenshot
+![alt text](images/demo.jpeg)
+
+### My process and challenges
+
+### Design
+
+## Testing
+    Installed Simplecov to test coverage. It's currently 100%
+## Edge cases
+- If time converted into either hour,day or week is not a whole number e.g 1.5 weeks
+- If number given is less than or equal to zero
