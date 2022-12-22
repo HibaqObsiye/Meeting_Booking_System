@@ -10,16 +10,16 @@ Price per week: £105<br>
 
 ## Project setup and installation
 
-1)Start by cloning this repo:
+1) Start by cloning this repo:
 ```
 https://github.com/HibaqObsiye/Meeting_Booking_System
 ```
-2)Set-up the enviornment to use Ruby's latest version:
+2) Set-up the enviornment to use Ruby's latest version:
 ```
 rvm get stable
 rvm use ruby --latest --install --default
 ```
-3)run the commands below(if you don't have bundler already)
+3) Run the commands below(if you don't have bundler already)
 ```
 gem install bundler
 bundle
