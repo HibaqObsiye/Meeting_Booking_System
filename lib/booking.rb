@@ -2,10 +2,10 @@ class Booking
     attr_accessor :time, :hours, :days, :weeks
 
     def initialize 
-        @minute_price = 2
-        @hour_price = 22
-        @day_price = 60
-        @week_price = 105
+      @minute_price = 2
+      @hour_price = 22
+      @day_price = 60
+      @week_price = 105
     end
 
     def get_price(minutes)
