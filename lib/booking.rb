@@ -39,6 +39,6 @@ class Booking
     end
 
     def best_price
-     [price_per_minute, price_per_hour, price_per_day, price_per_week].min
+      [price_per_minute, price_per_hour, price_per_day, price_per_week].min
     end  
 end
