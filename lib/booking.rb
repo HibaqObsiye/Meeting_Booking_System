@@ -1,6 +1,6 @@
 class Booking
     attr_accessor :time, :hours, :days, :weeks
-    
+
     def initialize 
         @minute_price = 2
         @hour_price = 22
@@ -9,7 +9,7 @@ class Booking
     end
 
     def get_price(minutes)
-      @minutes = minutes
+      @minutes = minutes.ceil
       convert_time
       best_price
     end
@@ -23,23 +23,23 @@ class Booking
     end
 
     def price_per_minute
-        @min_cost_total = @minutes * @minute_price
+      @minutes * @minute_price
     end
 
     def price_per_hour
-        hour_cost_total = @hour_price * @hours   
+      @hour_price * @hours   
     end
 
     def price_per_day
-      day_cost_total = @days * @day_price
+      @days * @day_price
     end
 
     def price_per_week 
-      week_cost_total = @weeks * @week_price  
+      @weeks * @week_price  
     end
 
     def best_price
-      [price_per_minute, price_per_hour, price_per_day, price_per_week].min
+     [price_per_minute, price_per_hour, price_per_day, price_per_week].min
     end
    
 end
