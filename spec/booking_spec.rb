@@ -9,6 +9,12 @@ describe Booking do
             end
         end
 
+        context "when 0.5 minutes given" do
+            it "returns 1" do
+              expect(subject.get_price(0.5)).to eq(1)  
+            end
+        end
+
         context 'When 60 minutes given' do
             it 'returns 22' do
                 expect(subject.get_price(60)).to eq(22)
@@ -16,7 +22,7 @@ describe Booking do
         end
 
         context 'When 1440 minutes given' do
-            it 'returns 60 ' do
+            it 'returns 60' do
                 expect(subject.get_price(1440)).to eq(60)
             end
         end
